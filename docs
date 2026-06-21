@@ -1,0 +1,11 @@
+framework:
+
+├── README.md                 <- Main landing page; contains project overview & methodology
+├── docs/
+│   └── phishing_report.md    <- This core detection & awareness report
+├── samples/
+│   ├── raw_phishing_sample.eml  <- Plaintext/EML file containing the target threat sample
+│   └── headers/
+│       └── sanitized_header.txt <- Raw email header used for analyzer tool ingestion
+└── assets/
+    └── framework_diagram.png <- Visual representation of triage or verification architec
