@@ -1,0 +1,12 @@
+Received: from mail-out.attacker-server.net (attacker-server.net [192.0.2.1])
+        by mx.company.com with ESMTPS id p184si3929424oif.61.2026.06.21.10.00.00
+        for <employee@company.com>;
+        Sun, 21 Jun 2026 10:00:01 -0500 (EST)
+Received-SPF: fail (google.com: domain of spoofed-origin@external-domain.com does not designate 192.0.2.1 as authorized sender)
+Authentication-Results: mx.company.com;
+       spf=fail (google.com: domain of spoofed-origin@external-domain.com does not designate 192.0.2.1 as authorized sender);
+       dkim=fail (signature verification failed);
+       dmarc=fail (p=REJECT sp=NONE dis=NONE) header.from=company.com
+From: "Security Team" <spoofed-origin@external-domain.com>
+To: employee@company.com
+Subject: Urgent: Your Account Will Be Locked
